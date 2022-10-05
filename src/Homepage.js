@@ -6,9 +6,9 @@ export default function Homepage(props) {
     useEffect(() => {
         async function getPosts() {
             const postsData = await fetch(
-                'https://serene-headland-84051.herokuapp.com/posts/'
+                'https://serene-headland-84051.herokuapp.com/'
             );
-            const postsJson = await postsData.json()
+            const postsJson = await postsData.json();
             setPosts(postsJson);
         }
         getPosts();
@@ -17,7 +17,6 @@ export default function Homepage(props) {
     return (
         <div id="homepage">
             <Posts posts={posts} />
-            
         </div>
     );
 }
@@ -33,9 +32,11 @@ function Post(props) {
 function Posts(props) {
     return (
         <>
-            {props.posts.map((post) => (
-                <Post key={post._id} _id={post._id} title={post.title} />
-            ))}
+            {props.posts
+                .filter((post) => post.published === true)
+                .map((post) => (
+                    <Post key={post._id} _id={post._id} title={post.title} />
+                ))}
         </>
     );
 }
