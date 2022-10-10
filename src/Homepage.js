@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import React from 'react';
 
 export default function Homepage(props) {
     const [posts, setPosts] = useState([]);
