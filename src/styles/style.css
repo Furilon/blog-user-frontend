@@ -51,3 +51,87 @@ header a {
 header a:hover {
     background-color: rgb(101, 101, 101);
 }
+
+#posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    border: 2px solid rgb(63, 63, 63);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(190, 190, 190);
+    transition: box-shadow 0.25s ease-in-out 0.01s;
+    color: black;
+    text-decoration: undreline;
+    text-align: center;
+}
+
+.post:hover {
+    box-shadow: 0 5px 3px 2px rgb(97, 97, 97)
+}
+
+#comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comment, #comment-form {
+    border: 2px solid rgb(63, 63, 63);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(190, 190, 190);
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#comment-form h4 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+form, form div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+form {
+    align-items: flex-end;
+}
+
+form div > div {
+    margin-bottom: 10px;
+}
+
+form div > div *:last-child {
+    padding: 8px 13px;
+    border: 2px solid rgb(63, 63, 63);
+    border-radius: 8px;
+    width: 195px;
+}
+
+form button {
+    padding: 5px 8px;
+    border: 2px solid rgb(63, 63, 63);
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: box-shadow 0.2s ease-in-out 0.01s,
+                font-weight 0.2s ease-in-out 0.01s;
+}
+
+form button:hover {
+    font-weight: bold;
+    box-shadow: 0 5px 3px 2px rgb(97, 97, 97)
+}
