@@ -18,17 +18,21 @@ export default function Homepage(props) {
     return (
         <div id="homepage">
             <h1>Mykyta Medvediev's blog</h1>
-            <h3>Posts</h3>
-            <Posts posts={posts} />
+            <h3>Posts:</h3>
+            <div id="posts">
+                <Posts posts={posts} />
+            </div>
         </div>
     );
 }
 
 function Post(props) {
     return (
-        <div className="post">
-            <Link to={'/posts/' + props._id}>{props.title}</Link>
-        </div>
+        // <div className="post">
+        <Link className="post" to={'/posts/' + props._id}>
+            {props.title}
+        </Link>
+        // </div>
     );
 }
 
