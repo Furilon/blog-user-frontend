@@ -9,15 +9,21 @@ body {
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
+    width: 100%;
 }
 
 footer {
     display: flex;
-    flex-direction: colums;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: auto;
-    margin-bottom: 40px;
+    color: white;
+    background-color: rgb(63, 63, 63);
+    height: 75px;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 0 -5px 5px rgb(120, 120, 120);
 }
 
 header {
@@ -25,10 +31,10 @@ header {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 30px;
-    padding-left: 100px;
     width: 100%;
     background-color: rgb(63, 63, 63);
     height: 75px;
+    box-shadow: 0 5px 5px rgb(120, 120, 120);
 }
 
 header a {
@@ -39,6 +45,7 @@ header a {
     border-radius: 8px;
     padding: 8px 13px;
     transition: background-color 0.25s ease-in-out 0.01s;
+    margin-left: 150px;
 }
 
 header a:hover {
