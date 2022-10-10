@@ -5,18 +5,18 @@ import Homepage from './Homepage';
 import BlogPage from './BlogPage';
 import React from 'react';
 
+import './styles/style.css';
+
 function App() {
     return (
-        <div className="App">
-            <BrowserRouter>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Homepage />} />
-                    <Route path="/posts/:postId" element={<BlogPage />} />
-                </Routes>
-                <Footer />
-            </BrowserRouter>
-        </div>
+        <BrowserRouter>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Homepage />} />
+                <Route path="/posts/:postId" element={<BlogPage />} />
+            </Routes>
+            <Footer />
+        </BrowserRouter>
     );
 }
 
