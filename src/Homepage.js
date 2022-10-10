@@ -17,6 +17,8 @@ export default function Homepage(props) {
 
     return (
         <div id="homepage">
+            <h1>Mykyta Medvediev's blog</h1>
+            <h3>Posts</h3>
             <Posts posts={posts} />
         </div>
     );
