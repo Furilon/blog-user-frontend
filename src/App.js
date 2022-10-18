@@ -12,8 +12,11 @@ function App() {
         <BrowserRouter>
             <Header />
             <Routes>
-                <Route path="/" element={<Homepage />} />
-                <Route path="/posts/:postId" element={<BlogPage />} />
+                <Route path="/blog-user-frontend" element={<Homepage />} />
+                <Route
+                    path="/blog-user-frontend/posts/:postId"
+                    element={<BlogPage />}
+                />
             </Routes>
             <Footer />
         </BrowserRouter>

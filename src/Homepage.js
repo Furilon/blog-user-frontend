@@ -28,11 +28,9 @@ export default function Homepage(props) {
 
 function Post(props) {
     return (
-        // <div className="post">
-        <Link className="post" to={'/posts/' + props._id}>
+        <Link className="post" to={'/blog-user-frontend/posts/' + props._id}>
             {props.title}
         </Link>
-        // </div>
     );
 }
 
